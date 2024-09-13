@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tempus Ars | Museu Virtual</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="container-titulo">Tempus Ars</h1>
+        <div class="mobile">
+            <p class="container-texto">Um nome que evoca a passagem do tempo e a imortalidade da arte.</p>
+            <p class="container-texto">Um convite a uma jornada através dos séculos, onde a arte se revela como um tesouro atemporal.</p>
+            <p class="container-texto">Nosso museu virtual celebra a rica história da arte, preservando obras-primas que transcendem gerações.</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" placeholder="Sobre qual obra gostaria de saber mais?" id="campo-pesquisa" title="Exemplos: Monalisa, Criação de Adão, Abaporu, Guernica...">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa"id="resultados-pesquisa">
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-museu">© 2024 Museu Tempus Ars. Todos os direitos reservados.</p>
+        <div class="rodape-bloco">
+            <p class="rodape-autor">Raissa Nascimento</p>
+            <a href="https://github.com/raimnascimento" target="_blank">
+                <img src="imagens/github.webp" alt="Link do Git Hub" title="Acesse o meu Github" class="rodape-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ra-nascimento/" target="_blank">
+                <img src="imagens/linkedin.svg" alt="Link do Linkedin" title="Acesse o meu Linkedin" class="rodape-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

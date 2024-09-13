@@ -1,0 +1,1042 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-fonte: #ffffff;
+    --cor-rodape: #0C0C0C;
+    --fonte-input: #3b3636;
+    --azul: #191970;
+    --fundo-descricao: #45474B;
+    --roxo-principal: #4f1586;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif; 
+    background-color: #ccc; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin: 0; 
+    padding: 0; 
+    background: url(imagens/museu.jpg);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    margin: 1em auto 2em;
+    text-align: center;
+}
+.container-titulo {
+    font-size: 2.5rem; 
+    color: var(--cor-fonte); 
+    text-align: center; 
+    letter-spacing: 0.4rem; 
+    text-shadow: 6px 6px 6px var(--roxo-principal); 
+}
+
+.container-titulo:hover {
+    color: var(--roxo-principal);
+    text-shadow: 6px 6px 6px var(--cor-fonte); 
+}
+
+.container-texto {
+    font-size: 1rem;
+    margin: 0.25em;
+    color: var(--cor-fonte);
+}
+
+section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 3rem; 
+}
+
+section input {
+    width: 30rem;
+    border: none; 
+    padding: 0.750rem; 
+    border-radius: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: var(--fonte-input); 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+}
+
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem; 
+    background-color: var(--azul); 
+    color: var(--cor-fonte); 
+    font-size: 1rem; 
+    cursor: pointer; 
+    box-shadow: 3px -3px 3px #fff;
+}
+section button:hover {
+    color: var(--fonte-rodape);
+    background-color: #a8893c; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.resultados-pesquisa {
+    text-align: left;
+    padding: 0.25rem;
+    width: 60rem; 
+    border-radius: 0.6rem;
+    margin-top: 0.25rem;
+}
+
+.item-resultado {
+    background: #ede9e9; 
+    border-radius: 0 3rem; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem; 
+    margin: 0;
+}
+
+.item-resultado a {
+    text-decoration: none; 
+    color: var(--roxo-principal); 
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+    color: #087ec2;
+}
+.descricao-meta {
+    font-size: 1rem;
+    color: var(--fundo-descricao); 
+    margin: 1.750rem 0; 
+    width: 80%;
+}
+
+.mensagem-aviso {
+    background-color: var(--cor-rodape);
+    padding: 0.5em;
+    border-radius: 1em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.item-botao {
+    margin-top: 2em;
+    background-color: rgba(195, 190, 190, 0.8);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-weight: 600;
+}
+
+.item-imagem {
+    width: 20%;
+    margin-right: 0.5em;
+    border: solid 7.5px black;
+}
+
+.rodape {
+    background-color: var(--cor-rodape); 
+    color: var(--cor-fonte); 
+    text-align: center;
+    padding: 0; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+}
+
+.rodape-museu {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+.rodape-bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape-autor {
+    font-size: 0.75rem;
+    margin: 0 2rem;
+}
+.rodape-autor:hover {
+    color: var(--roxo-principal);
+    font-weight: 500;
+}
+.rodape-icon {
+    width: 2rem;
+    margin: 0 0.25em;
+}
+
+@media screen and (max-width: 1064px) {
+
+    body {
+        background: url(imagens/museu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 2rem; 
+        letter-spacing: 0.1rem;
+    }
+
+    .container-texto {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 30rem; 
+        padding: 0.8rem; 
+        font-size: 1rem;
+    }
+
+    section button {
+        padding: 0.8rem 1.2rem; 
+        font-size: 1rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 5em;
+        width: 90%; 
+        height: 50vh; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        padding: 0.8rem; 
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.5rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 1rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 1rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 30%;
+        margin: 1em auto;
+        border: solid 5px black;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.9rem;
+        padding: 0.5em;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 0rem;
+    }
+    .rodape-autor {
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: url(imagens/museu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 2.2rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.9rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 28rem; 
+        padding: 0.7rem; 
+        font-size: 1rem;
+    }
+
+    section button {
+        padding: 0.7rem 1rem; 
+        font-size: 1rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 5em;
+        width: 90%; 
+        height: 50vh; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.2rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 1rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.8rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 30%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.7rem;
+    }
+    .rodape-autor {
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 652px) {
+    body {
+        background: url(imagens/museu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 2rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.9rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 23rem; 
+        padding: 0.7rem; 
+        font-size: 0.9rem;
+    }
+
+    section button {
+        padding: 0.7rem 1rem; 
+        font-size: 1rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 5em;
+        width: 90%; 
+        height: 50vh; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.9rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.8rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.7rem;
+    }
+    .rodape-autor {
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 520px) {
+    body {
+        background: url(imagens/museu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 1.8rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.8rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 22rem; 
+        padding: 0.7rem; 
+        font-size: 0.8rem;
+    }
+
+    section button {
+        padding: 0.7rem 1rem; 
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 5em;
+        width: 90%; 
+        height: 50vh; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.8rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.8rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.7rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.7rem;
+    }
+    .rodape-autor {
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 488px) {
+    body {
+        background: url(imagens/museu-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 1.7rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.8rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 18rem; 
+        padding: 0.5rem; 
+        font-size: 0.8rem;
+    }
+
+    section button {
+        padding: 0.5rem 1rem; 
+        font-size: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 5em;
+        width: 90%; 
+        height: 50vh; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.8rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.7rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.6rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.7rem;
+    }
+    .rodape-autor {
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 408px) {
+    body {
+        background: url(imagens/museu-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 1.6rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.7rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 17rem; 
+        padding: 0.5rem; 
+        font-size: 0.7rem;
+    }
+
+    section button {
+        padding: 0.5rem 1rem; 
+        font-size: 0.7rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 3em;
+        width: 90%; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.7rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.7rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.6rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.7rem;
+    }
+    .rodape-autor {
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media (min-width: 388px) and (max-width: 407px) {
+    body {
+        background: url(imagens/museu-mobile2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 1.5rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.7rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 17rem; 
+        padding: 0.5rem; 
+        font-size: 0.7rem;
+    }
+
+    section button {
+        padding: 0.5rem 1rem; 
+        font-size: 0.7rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 3em;
+        width: 90%; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.7rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.7rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.6rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.7rem;
+    }
+    .rodape-autor {
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1.2rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media (min-width: 330px) and (max-width: 388px) {
+    body {
+        background: url(imagens/museu-mobile3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 1.5rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.7rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 15rem; 
+        padding: 0.5rem; 
+        font-size: 0.7rem;
+    }
+
+    section button {
+        padding: 0.5rem 1rem; 
+        font-size: 0.7rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 4em;
+        width: 90%; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 0.8rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.7rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.7rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.6rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.6rem;
+    }
+    .rodape-autor {
+        font-size: 0.6rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1rem;
+        margin: 0 0.25em;
+    }
+}
+
+/* Responsividade para celulares */
+@media (min-width: 280px) and (max-width: 330px) {
+    body {
+        background: url(imagens/museu-mobile3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-titulo {
+        font-size: 1.4rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .container-texto {
+        font-size: 0.6rem;
+        width: 90%;
+        margin: 0.25em auto;
+        color: var(--cor-fonte);
+    }
+
+    .mobile {
+        width: 90%;
+        margin: auto;
+        background-color: var(--cor-rodape);
+        opacity: 0.9;
+        padding: 0.5em;
+        border-radius: 2em;
+    }
+
+    section input {
+        width: 12rem; 
+        padding: 0.5rem; 
+        font-size: 0.6rem;
+    }
+
+    section button {
+        padding: 0.5rem 1rem; 
+        font-size: 0.6rem;
+    }
+
+    .resultados-pesquisa {
+        margin: 0 auto 4em;
+        width: 90%; 
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .item-resultado {
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 0.7rem;
+    }
+
+    .descricao-meta {
+        text-align: left;
+        width: 90%;
+        font-size: 0.7rem;
+        margin: 1rem 0; 
+    }
+
+    .item-botao {
+        font-size: 0.7rem;
+        margin: 2em 0;
+        padding: 0.5em;
+    }
+
+    .item-imagem {
+        width: 40%;
+        margin: 1em auto;
+    }
+
+    .mensagem-aviso {
+        font-size: 0.6rem;
+        margin: 0 auto;
+    }
+
+    .rodape-museu {
+        font-size: 0.6rem;
+    }
+    .rodape-autor {
+        font-size: 0.6rem;
+        margin: 0 1rem;
+    }
+    .rodape-icon {
+        width: 1rem;
+        margin: 0 0.25em;
+    }
+}
